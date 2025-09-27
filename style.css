@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    color: blue;
+}
+img {
+    width: 250px;
+    height: 80px;
+    margin: 40px;
+}
+ul {
+    width: 250px;
+}
+table, tr, td, th {
+    border: 1px solid black;
+}
+.center-items {
+    text-align: center;
+}
