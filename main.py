@@ -1,6 +1,6 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
-hostName = 'localhost'
+hostName = "localhost"
 serverPort = 8080
 
 
@@ -17,14 +17,14 @@ class MyServer(BaseHTTPRequestHandler):
         #  завершение заголовка ответа.
         self.end_headers()
         # читаем файл html, который возвращает разметку html
-        r = read_html('contacts.html')
+        r = read_html("contacts.html")
         # записываем строку переведенную в байты методом wfile.write для ...
-        self.wfile.write(r.encode('utf-8'))
+        self.wfile.write(r.encode("utf-8"))
 
 
 def read_html(current_file):
     """Функция чтения шаблона html"""
-    with open(current_file, 'r', encoding="UTF-8") as file_html:
+    with open(current_file, "r", encoding="UTF-8") as file_html:
         result = file_html.read()
         # print(result)
     return result
